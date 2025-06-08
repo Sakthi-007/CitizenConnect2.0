@@ -150,6 +150,7 @@ Make sure to set up the following environment variables:
 - `JWT_SECRET`: Secret key for JWT authentication
 - `PORT`: Server port (default: 5000)
 
+
 ## Current Deployment Status ⚠️
 
 > **Note: Application Currently Offline**
