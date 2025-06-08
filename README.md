@@ -150,12 +150,6 @@ Make sure to set up the following environment variables:
 - `JWT_SECRET`: Secret key for JWT authentication
 - `PORT`: Server port (default: 5000)
 
-## Access URLs
-
-- Frontend: [Your frontend URL]
-- Backend API: [Your backend URL]
-- Admin Dashboard: [Your admin dashboard URL]
-
 ## Additional Notes
 
 - The application uses Nginx as the web server for the client container
