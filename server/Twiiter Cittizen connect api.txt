@@ -1,0 +1,38 @@
+//Bearer token//
+
+AAAAAAAAAAAAAAAAAAAAAM7ltQEAAAAA%2FrgjiJ4ZBFP5E7wG2RMZK1gT2zk%3DqsAgJjuWa1P8OP0nCUkihXjZu76W827Ie5EcUojViqydURQq7Q
+
+Consumer
+//Api key
+
+l1u92tqgBn1V1fdfZUoCEhEcQ
+
+//API key secret
+lz49OR6YJ3DViHQpYGSILM8NeZzTULskARMvgiFontdWrLBMwL
+
+
+//Access token
+
+1780088596264779776-9b6qfAlmSFpFguDAYqPNhmqlpF6Da0
+
+
+//Access token secret
+
+MIV126QsS3vWd3T7Nq7pK1UCkm18ZF2qtPJ1HDb48bhnm
+
+
+//Client Id
+NDBQX05Tb09SUWV6Vk5kMVJvdGg6MTpjaQ
+
+//Client secret
+
+gtxFe8qdXMb5zieznG5_eHM5d6g3AiBpr0gccJujDqciNQdRqz
+
+
+Sakthi's API
+
+api_key = "vYkTYR5cj2v5NLo4vX1IjsKmz"
+api_secret = "tXT7yDVlB5Llc9Ti15ZvBfL9HkmOmTe079TninKPAuW19oPAKC"
+bearer_token = "AAAAAAAAAAAAAAAAAAAAAHnznwEAAAAA2S18cSGfvtx4Zgo8R8Un2WPysRg%3DCAi2bqDdWfb5r7Vfcgk2DRvcH7wckzUdh43Quwobnwv3RA6dKU"
+access_token = "1528221150484242432-b50EQi29covddMYY9JBW45eTUkC1PM"
+access_token_secret = "MIFygSSEpVqRrTso8fjC3l9NyHRTzrxrsarVD4FnYbKGS"

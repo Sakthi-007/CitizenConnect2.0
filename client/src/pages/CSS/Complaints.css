@@ -1,0 +1,120 @@
+.complaints-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+    background-color:transparent;
+}
+
+
+.complaint {
+    background-image: url("C:\\Users\\ASUS\\Documents\\Vs code\\CitizenConnect2.0\\client\\src\\images\\complaintss.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures the background image stays fixed during scroll */
+   
+    color: #040404;
+    padding: 20px;
+    border-radius: 8px;
+    border: 3px solid #ff7878;
+    -webkit-box-shadow: 6px 4px 12px -3px rgb(255, 114, 114);
+    -moz-box-shadow: 6px 4px 12px -3px rgb(255, 121, 121);
+    box-shadow: 6px 4px 12px -3px rgb(255, 96, 96);
+    width: 300px;
+
+    button{
+      margin-top: 10px;
+      padding: 15px 15px;
+      font-weight: 600;
+      font-size: 18px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+
+      &:disabled{
+        cursor: not-allowed;
+        opacity: 0.6;
+        pointer-events: none;
+      }
+      &:hover{
+        background-color: #0267d3;
+      }
+      &:active{
+        background-color: rgb(24, 197, 24);
+      }
+    }
+
+
+ h3 {
+    margin-top: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #000;
+}
+
+ p {
+    margin: 10px 0;    
+    line-clamp:1;
+    overflow: hidden;
+    span{
+        color: rgb(29, 36, 202);
+    }
+}
+
+ img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+}
+.resolved{
+  border: 3px solid #51ff00;
+  -webkit-box-shadow: 2px 4px 4px 0px rgb(81, 255, 0);
+-moz-box-shadow: 2px 4px 4px 0px rgb(84, 255, 5);
+box-shadow: 2px 2px 4px 0px rgb(83, 255, 4);
+}
+
+.head1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px 8px;
+    background-color:transparent;
+    color: rgb(29, 36, 202);;
+  
+ a{
+    /* padding: 10px 20px; */
+    border: none;
+    color: #000;
+    cursor: pointer;
+    .home-icon{
+      font-size: 30px;
+    }
+  }
+}
+@media screen and (min-width:768px) {
+    .head1{
+       font-size: 25px;
+       padding: 20px 8px;
+     a{
+       .home-icon{
+          font-size: 40px;
+        }
+      }
+    }
+    .complaint{
+      button{
+        font-size: 20px;
+        margin-top: 15px;
+      }
+    }
+    .resolved{
+      border: 3px solid #51ff00;
+  }
+}

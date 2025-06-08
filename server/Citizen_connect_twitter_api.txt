@@ -1,0 +1,14 @@
+api_key="ZWMbH6z6Sig4ILIT5QNccOMn4"
+
+
+api_key_secret="EDowlGSHPDxMJYYEpdG27uCqnZS0WNhRmEadWEKCxItY0dwydC"
+
+bearer_token="AAAAAAAAAAAAAAAAAAAAAM7ltQEAAAAADB8vYjznS5G2EYEbmYpktQKqyEY%3DCy6bthY91HwlVztAGFZofTFf5dQdUDMqEl6WaUQvgVfwK9cJHY"
+
+access_token="1780088596264779776-AfGCx3ZIV2ZYUS6Xv52I2xfTzNHJRd"
+
+access_token_secret="S5ZOiiM4b5v6sVND8IUNTzjcziSNFbGM6yEkxFRcM80kR"
+
+client_id="NDBQX05Tb09SUWV6Vk5kMVJvdGg6MTpjaQ"
+
+client_id_secret="4HQ_JRV-a9PttDCy6AzDeWrfbNVsvAEO3we9K9SmFJe4euYI63"

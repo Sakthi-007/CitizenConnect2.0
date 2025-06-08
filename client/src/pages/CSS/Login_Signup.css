@@ -1,0 +1,76 @@
+.error{
+  margin-top: 0.125rem/* 2px */;
+  font-size: 1rem/* 12px */;
+  line-height: 1rem/* 16px */;
+  color: #f64949fe;
+}
+
+
+.container {
+  background-color:rgba(185, 182, 182, 0.432);
+  width: 80vw;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30vh;
+}
+
+#hh{
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: rgb(0, 8, 255);
+}
+
+#head{
+  position: fixed;
+  width: 100vw;
+  top:15vh;
+  z-index:100;
+  max-height: 5vh;
+  color: rgb(29, 36, 202);
+  text-align: center;
+  font-weight:600 ;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgb(18, 20, 129,0.2);
+}
+
+.formm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formm p{
+  color: rgb(0, 0, 0);
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  
+  &:focus{
+    /* outline: none; */
+    border-color: #007bff;
+  }
+
+}
+
+
+@media screen and (min-width: 425px) {
+  /* Your CSS styles for screens wider than or equal to 728 pixels go here */
+  .container{
+   width: 50vmin;
+   padding: 35px;
+   form{
+    gap: 25px;
+    input{
+      padding: 15px;
+    }
+   }
+  }
+
+}
