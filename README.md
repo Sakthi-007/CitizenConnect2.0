@@ -156,6 +156,49 @@ Make sure to set up the following environment variables:
 - Backend API: [Your backend URL]
 - Admin Dashboard: [Your admin dashboard URL]
 
+## Current Deployment Status ⚠️
+
+> **Note: Application Currently Offline**
+> The application is temporarily unavailable due to cloud service billing requirements. To run the application, you have the following options:
+
+### Option 1: Local Deployment
+You can run the application locally using Docker containers as described in the [Docker Deployment](#docker-deployment) section above.
+
+### Option 2: Cloud Deployment Requirements
+To deploy the application to cloud services, you'll need to:
+
+1. **Google Cloud Run (Frontend)**
+   - Set up a Google Cloud account
+   - Enable billing for your Google Cloud project
+   - Estimated monthly cost: $20-30 USD for basic usage
+   - Required services: Cloud Run, Container Registry
+
+2. **Render (Backend)**
+   - Create a Render account
+   - Upgrade to a paid plan for sustained deployment
+   - Estimated monthly cost: $7+ USD for basic web service
+
+3. **MongoDB Atlas (Database)**
+   - Create a MongoDB Atlas account
+   - Use M0 Free tier for development
+   - Upgrade to M2/M5 Shared Cluster for production ($9-25/month)
+
+### Total Estimated Monthly Cloud Costs
+- Basic Deployment: $36-62 USD/month
+- Production Deployment: $50-100 USD/month depending on traffic
+
+## Alternative Deployment Options
+
+1. **Self-Hosted Solution**
+   - Deploy on your own server/VPS
+   - Use platforms like DigitalOcean, Linode, or AWS Lightsail
+   - Estimated cost: $5-20 USD/month
+
+2. **Free Tier Options**
+   - Frontend: GitHub Pages or Netlify (free)
+   - Backend: Railway.app or Fly.io (limited free tier)
+   - Database: MongoDB Atlas M0 (free tier)
+
 ## Additional Notes
 
 - The application uses Nginx as the web server for the client container
