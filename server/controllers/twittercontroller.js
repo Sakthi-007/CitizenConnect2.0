@@ -5,11 +5,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const client = new TwitterApi({
-  appKey: "ZWMbH6z6Sig4ILIT5QNccOMn4",
-  appSecret:"EDowlGSHPDxMJYYEpdG27uCqnZS0WNhRmEadWEKCxItY0dwydC",
-  accessToken: "1780088596264779776-AfGCx3ZIV2ZYUS6Xv52I2xfTzNHJRd",
-  accessSecret: "S5ZOiiM4b5v6sVND8IUNTzjcziSNFbGM6yEkxFRcM80kR",
-  bearerToken:"AAAAAAAAAAAAAAAAAAAAAM7ltQEAAAAADB8vYjznS5G2EYEbmYpktQKqyEY%3DCy6bthY91HwlVztAGFZofTFf5dQdUDMqEl6WaUQvgVfwK9cJHY"
+  appKey: process.env.appKey,
+  appSecret:process.env.appSecret,
+  accessToken:process.env.accessToken,
+  accessSecret: process.env.accessSecret,
+  bearerToken:process.env.bearerToken,
 });
 
 const rwClient = client.readWrite;
