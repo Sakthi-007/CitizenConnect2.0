@@ -150,8 +150,76 @@ Make sure to set up the following environment variables:
 - `JWT_SECRET`: Secret key for JWT authentication
 - `PORT`: Server port (default: 5000)
 
+## Environment Setup
 
-## Current Deployment Status ⚠️
+### Client Environment Variables
+Create a `.env` file in the `client` directory:
+
+```env
+# Development
+VITE_API_URL=http://localhost:8800
+
+# Production (when deploying)
+# VITE_API_URL=your-production-api-url
+```
+
+### Server Environment Variables
+Create a `.env` file in the `server` directory:
+
+```env
+PORT=8800
+MONGODB_URI=your-mongodb-connection-string
+JWT_SECRET=your-jwt-secret
+```
+
+### Environment Files
+- `.env`: Default environment variables
+- `.env.development`: Development-specific variables
+- `.env.production`: Production-specific variables
+
+**Note**: Make sure to add `.env` files to `.gitignore` to keep sensitive information secure.
+
+## Local Development Setup
+
+1. Clone the repository and install dependencies:
+```powershell
+git clone <repository-url>
+cd CitizenConnect2.0
+```
+
+2. Client Setup:
+```powershell
+cd client
+npm install
+# Create .env file with VITE_API_URL
+npm run dev
+```
+
+3. Server Setup:
+```powershell
+cd server
+npm install
+# Create .env file with required variables
+npm start
+```
+
+## Containerized Development
+
+1. Build and run client container:
+```powershell
+cd client
+docker build -t citizenconnect-client .
+docker run -d -p 80:80 --env-file .env citizenconnect-client
+```
+
+2. Build and run server container:
+```powershell
+cd server
+docker build -t citizenconnect-server .
+docker run -d -p 8800:8800 --env-file .env citizenconnect-server
+```
+
+## Deployment Status
 
 > **Note: Application Currently Offline**
 > The application is temporarily unavailable due to cloud service billing requirements. To run the application, you have the following options:
@@ -193,6 +261,39 @@ To deploy the application to cloud services, you'll need to:
    - Frontend: GitHub Pages or Netlify (free)
    - Backend: Railway.app or Fly.io (limited free tier)
    - Database: MongoDB Atlas M0 (free tier)
+
+## Environment Variable Management
+
+### Git Version Control
+The following files are ignored in git to protect sensitive information:
+```gitignore
+.env
+.env.local
+.env.*.local
+```
+
+### Security Considerations
+- Never commit `.env` files to version control
+- Use different environment variables for development and production
+- Keep API keys and sensitive data secure
+- Use strong JWT secrets in production
+
+### Managing Multiple Environments
+
+1. Development:
+   - Use `http://localhost:8800` for API URL
+   - MongoDB local instance or free tier
+   - Local development environment
+
+2. Production:
+   - Use secure HTTPS endpoints
+   - Production MongoDB instance
+   - Properly configured environment variables
+
+3. Testing:
+   - Separate test database
+   - Test-specific environment variables
+   - Isolated test environment
 
 ## Additional Notes
 
