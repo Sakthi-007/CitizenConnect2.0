@@ -17,7 +17,7 @@ function Signup({ onLogin }) {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://ccserver-2d2c.onrender.com/api/user/register', formData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/user/register`, formData);
         history('/'); 
 
       } 

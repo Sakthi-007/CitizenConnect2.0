@@ -4,7 +4,7 @@ import axios from 'axios';
 export const registerUser = (userData) => {
   return async (dispatch) => {
     try {
-      const response = await axios.post('https://ccserver-2d2c.onrender.com/api/register', userData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/register`, userData);
       dispatch({ type: 'REGISTER_SUCCESS', payload: response.data });
     } catch (error) {
       dispatch({ type: 'REGISTER_FAIL', payload: error.response.data.message });
@@ -15,7 +15,7 @@ export const registerUser = (userData) => {
 export const loginUser = (userData) => {
   return async (dispatch) => {
     try {
-      const response = await axios.post('https://ccserver-2d2c.onrender.com/api/login', userData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/login`, userData);
       dispatch({ type: 'LOGIN_SUCCESS', payload: response.data });
     } catch (error) {
       dispatch({ type: 'LOGIN_FAIL', payload: error.response.data.message });
@@ -26,7 +26,7 @@ export const loginUser = (userData) => {
 export const logoutUser = () => {
   return async (dispatch) => {
     try {
-      await axios.get('https://ccserver-2d2c.onrender.com/api/logout');
+      await axios.get(`${import.meta.env.VITE_API_URL}/api/logout`);
       dispatch({ type: 'LOGOUT_SUCCESS' });
     } catch (error) {
       console.error(error);

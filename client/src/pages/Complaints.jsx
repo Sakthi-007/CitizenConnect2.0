@@ -15,7 +15,7 @@ function Complaints() {
       async function fetchComplaints() {
           try {
             const dept=localStorage.getItem('department');
-              const response = await axios.get(`https://ccserver-2d2c.onrender.com/api/admin/complaints?dept=${dept}`);
+              const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/admin/complaints?dept=${dept}`);
               const dataWithImages = await Promise.all(
                   response.data.map(async (complaint) => {
                       const imageUrl = await convertToImage(complaint.image);

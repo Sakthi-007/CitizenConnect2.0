@@ -7,7 +7,7 @@ function HomeAdmin({ onLogout }) {
 
   const handleLogout = async () => {
     try {
-      await axios.post('https://ccserver-2d2c.onrender.com/api/user/logout');
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/user/logout`);
       setMessage('Logout successful');
       onLogout(); // Notify parent component about logout
     } catch (error) {

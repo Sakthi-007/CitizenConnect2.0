@@ -13,7 +13,7 @@ function Home({ onLogout }) {
   const handleLogout = async () => {
     try {
       localStorage.removeItem("email");
-      await axios.post("https://ccserver-2d2c.onrender.com/api/user/logout");
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/user/logout`);
       setMessage("Logout successful");
       onLogout();
     } catch (error) {

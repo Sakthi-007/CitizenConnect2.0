@@ -17,7 +17,7 @@ function Login({ onLogin }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://ccserver-2d2c.onrender.com/api/user/login', formData);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/user/login`, formData);
       if (response.status === 200) {
         if (response.data.isAdmin) {
           console.log(response.data);

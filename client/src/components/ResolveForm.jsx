@@ -37,7 +37,7 @@ const ResolveForm = ({complaint_id}) => {
           image: base64Image
         };  
 
-        const response = await axios.post("https://ccserver-2d2c.onrender.com/api/admin/update",data);
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/api/admin/update`, data);
         console.log(response.data); 
 
         alert(`form sumbitted `);
